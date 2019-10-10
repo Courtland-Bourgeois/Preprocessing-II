@@ -1,1 +1,23 @@
 // Mixins in here
+
+// General Border
+.border() {
+    border: 1px solid black;
+}
+
+.page-align() {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.buttons(@color, @bg-color, @radius) {
+    color: @color;
+    background-color: @bg-color;
+    border-radius: @radius;
+    padding: 10px 40px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+@phone: ~'(max-width: 500px)';
